@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: scoops
+  name: scoops
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: scoops
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: scoops
+    spec:
+      containers:
+      - image: ghcr.io/shoaib720/scoops:95794bf0ae865a715846b8f1c979143dd9add801
+        name: scoops
+        ports:
+          - containerPort: 80
+      imagePullSecrets:
+      - name: ghcr-pull-secret

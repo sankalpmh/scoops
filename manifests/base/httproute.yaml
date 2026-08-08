@@ -1,0 +1,17 @@
+apiVersion: gateway.networking.k8s.io/v1
+kind: HTTPRoute
+metadata:
+  name: scoops-httproute
+spec:
+  parentRefs:
+  - name: nginx-gateway
+  hostnames:
+  - "scoops.deploywizard.in"
+  rules:
+  - matches:
+    - path:
+        type: PathPrefix
+        value: /
+    backendRefs:
+    - name: scoops-svc-prod
+      port: 8080

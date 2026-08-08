@@ -3,6 +3,11 @@ name: Build and push to GHCR
 on:
   push:
     branches: [main]
+    paths-ignore:
+      - 'docs/**'
+      - '**.md'
+      - 'manifests/**'
+      - '.github/**'
 
 jobs:
   build-and-push:

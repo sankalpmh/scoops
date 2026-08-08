@@ -1,0 +1,24 @@
+resources:
+- ../../base
+
+nameSuffix: -dev
+
+patches:
+- path: delete-httproute.yaml
+- target:
+    kind: Deployment
+    name: scoops
+  patch: |-
+    - op: replace
+      path: /spec/replicas
+      value: 1
+- target:
+    kind: Service
+    name: scoops-svc
+  patch: |-
+    - op: add
+      path: /spec/type
+      value: NodePort
+    - op: add
+      path: /spec/ports/0/nodePort
+      value: 30080

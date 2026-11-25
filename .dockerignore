@@ -1,3 +1,4 @@
 .github
 manifests
 **.md
+gha-creds-*.json

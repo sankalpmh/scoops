@@ -58,7 +58,6 @@ jobs:
             --image "${IMAGE_URI}:${GITHUB_SHA}" \
             --region "${REGION}" \
             --platform managed \
-            --allow-unauthenticated \
             --port 80 \
             --cpu 1 \
             --memory 256Mi \

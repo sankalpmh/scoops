@@ -9,6 +9,7 @@ on:
       - "**.md"
       - "manifests/**"
       - ".github/**"
+      - ".gitignore"
   workflow_dispatch:
 
 env:

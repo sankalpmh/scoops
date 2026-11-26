@@ -18,6 +18,7 @@ env:
   GAR_REPOSITORY: scoops-repo
   IMAGE_NAME: scoops
   SERVICE_NAME: scoops
+  RUNTIME_SA: scoops-cloudrun-runtime@project-1d7cad77-567e-48ed-b75.iam.gserviceaccount.com
 
 jobs:
   build-and-deploy:
@@ -59,6 +60,7 @@ jobs:
             --image "${IMAGE_URI}:${GITHUB_SHA}" \
             --region "${REGION}" \
             --platform managed \
+            --service-account "${RUNTIME_SA}" \
             --port 80 \
             --cpu 1 \
             --memory 256Mi \

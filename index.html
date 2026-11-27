@@ -2,177 +2,215 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Shoaib Salim Shaikh">
-    <meta name="description" content="This is an online icecream shopping website home page.">
-    <meta name="keywords" content="icecream, scoops, cones, flavors, cold, chill, delicious">
+    <meta name="description" content="Discover your next favourite scoop. Explore fruity favourites, creamy classics and chocolate treats at Scoops.">
+    <meta name="theme-color" content="#4A2518">
     <link rel="icon" href="./assets/icons/ice-cream.png" type="image/x-icon">
     <link rel="stylesheet" href="./styles/utils.css">
     <link rel="stylesheet" href="./styles/home-style.css">
-    <script src="./js/snowplow.js"></script>
-    <title>Scoops-HOME</title>
+    <title>Scoops | Happiness, Served by the Scoop</title>
 </head>
-<body>
-    <div class="container">
-        <header class="flex justify-between items-center">
-            <div class="brand">
-                <img src="./assets/icons/logo-white.svg" alt="Brand Logo">
-            </div>
-            <nav class="flex justify-between items-center">
-                <a href="index.html" class="active">HOME</a>
-                <a href="pages/products.html">PRODUCTS</a>
-                <a href="pages/contact.html">CONTACT</a>
-                <a href="pages/signup.html">SIGNUP</a>
-                <a href="pages/login.html">LOGIN</a>
-            </nav>
-        </header>
-        <section>
-            <div class="title">Today's Specials — Freshly Scooped</div>
-            <div class="specials-container flex justify-center">
-                <div class="icecream-card">
-                    <div class="card-image">
-                        <img src="./assets/images/berry-special.jpg" alt="no image">
-                    </div>
-                    <div class="card-title">
-                        Vanilla Berry
-                    </div>
-                    <div class="card-price">
-                        ₹89/-
-                    </div>
-                    <div class="card-cta">
-                        <button class="btn btn-primary btn-large">Buy now</button>
-                    </div>
-                </div>
-                <div class="icecream-card">
-                    <div class="card-image">
-                        <img src="./assets/images/deluxe-strawberry-special.jpg" alt="no image">
-                    </div>
-                    <div class="card-title">
-                        Deluxe Strawberry
-                    </div>
-                    <div class="card-price">
-                        ₹119/-
-                    </div>
-                    <div class="card-cta">
-                        <button class="btn btn-primary btn-large">Buy now</button>
-                    </div>
-                </div>
-                <div class="icecream-card">
-                    <div class="card-image">
-                        <img src="./assets/images/chocolate-love-special.jpg" alt="no image">
-                    </div>
-                    <div class="card-title">
-                        Chocolate Love
-                    </div>
-                    <div class="card-price">
-                        ₹125/-
-                    </div>
-                    <div class="card-cta">
-                        <button class="btn btn-primary btn-large">Buy now</button>
-                    </div>
-                </div>
-                <div class="icecream-card">
-                    <div class="card-image">
-                        <img src="./assets/images/royal-mix-special.jpg" alt="no image">
-                    </div>
-                    <div class="card-title">
-                        Royal Mix
-                    </div>
-                    <div class="card-price">
-                        ₹149/-
-                    </div>
-                    <div class="card-cta">
-                        <button class="btn btn-primary btn-large">Buy now</button>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <div class="divider">
-            <hr>
-        </div>
-        <section>
-            <div class="title">Flavors we have...</div>
-            <div class="flavours-container flex justify-center wrap">
-                <div class="flavor">
-                    <div class="flavor-image">
-                        <img src="./assets/images/strawberries.jpg" alt="strawberries">
-                    </div>
-                    <div class="flavor-title">
-                        Strawberry
-                    </div>
-                </div>
-                <div class="flavor">
-                    <div class="flavor-image">
-                        <img src="./assets/images/vanilla.jpg" alt="strawberries">
-                    </div>
-                    <div class="flavor-title">
-                        Vanilla
-                    </div>
-                </div>
-                <div class="flavor">
-                    <div class="flavor-image">
-                        <img src="./assets/images/chocolate.jpg" alt="strawberries">
-                    </div>
-                    <div class="flavor-title">
-                        Chocolate
-                    </div>
-                </div>
-                <div class="flavor">
-                    <div class="flavor-image">
-                        <img src="./assets/images/butterscotch.jpg" alt="strawberries">
-                    </div>
-                    <div class="flavor-title">
-                        Butterscotch
-                    </div>
-                </div>
-                <div class="flavor">
-                    <div class="flavor-image">
-                        <img src="./assets/images/mango.jpg" alt="strawberries">
-                    </div>
-                    <div class="flavor-title">
-                        Mango
-                    </div>
-                </div>
-                <div class="flavor">
-                    <div class="flavor-image">
-                        <img src="./assets/images/pista.jpeg" alt="strawberries">
-                    </div>
-                    <div class="flavor-title">
-                        Pista
-                    </div>
-                </div>
-            </div>
-        </section>
-        <footer>
-            <div class="footer-brand">
-                <img src="./assets/icons/logo-white.svg" alt="Brand Logo">
-            </div>
-            <div class="footer-contact flex justify-center">
-                <div class="flex items-center">
-                    <img src="./assets/icons/email-solid-white.svg" alt="email-icon">
-                    <em>enquire@scoops.com</em>
-                </div>
-                <div class="flex items-center">
-                    <img src="./assets/icons/mobile-white.svg" alt="mobile-icon">
-                    <em>+91 9851122467</em>
-                </div>
-            </div>
-            <div class="footer-copyright">
-                <em>Copyright &#169; 2020 - 2030 www.scoops.com</em><br>
-                <em>All Rights Reserved</em>
-            </div>
-            <div class="footer-social flex justify-center">
-                <div class="flex items-center">
-                    <img src="./assets/icons/instagram-white.svg" alt="insta-icon">
-                    <em>scoops.delicious</em>
-                </div>
-                <div class="flex items-center">
-                    <img src="./assets/icons/facebook-white.svg" alt="fb-icon">
-                    <em>scoops.delicious</em>
-                </div>
-            </div>
-        </footer>
+<body class="home-page">
+    <div class="announcement-bar">
+        <p>A LITTLE SCOOP OF HAPPINESS GOES A LONG WAY</p>
     </div>
+
+    <header class="site-header">
+        <div class="nav-wrap">
+            <a class="brand" href="index.html" aria-label="Scoops home">
+                <img src="./assets/icons/logo-white.svg" alt="Scoops">
+            </a>
+
+            <nav class="main-nav" aria-label="Main navigation">
+                <a class="nav-link active" href="index.html">Home</a>
+                <a class="nav-link" href="pages/products.html">Products</a>
+                <a class="nav-link" href="pages/contact.html">Contact</a>
+                <a class="nav-link" href="pages/signup.html">Sign up</a>
+                <a class="nav-link" href="pages/login.html">Log in</a>
+                <a class="nav-cta" href="pages/products.html">Explore menu <span aria-hidden="true">↗</span></a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <div class="hero-inner">
+                <div class="hero-copy">
+                    <p class="eyebrow"><span></span> SCOOPS FOR EVERY MOOD</p>
+                    <h1>Happiness,<br><em>served by the scoop.</em></h1>
+                    <p class="hero-description">
+                        From fruity favourites to chocolate-rich treats, find a flavour
+                        that makes your day a little sweeter.
+                    </p>
+                    <div class="hero-actions">
+                        <a class="button button-primary" href="pages/products.html">Explore the menu <span aria-hidden="true">↗</span></a>
+                        <a class="button button-secondary" href="#flavours">Find your flavour <span aria-hidden="true">↓</span></a>
+                    </div>
+                    <div class="hero-footnote">
+                        <span class="footnote-mark">✳</span>
+                        <span>Pick your mood. We'll bring the scoops.</span>
+                    </div>
+                </div>
+
+                <div class="hero-visual" aria-label="Scoops ice cream favourites">
+                    <div class="hero-orbit hero-orbit-one"></div>
+                    <div class="hero-orbit hero-orbit-two"></div>
+                    <div class="hero-photo">
+                        <img src="./assets/images/berry-special.jpg" alt="Scoops berry ice cream special">
+                    </div>
+                    <div class="hero-sticker">
+                        <span>So much</span>
+                        <strong>YUM!</strong>
+                    </div>
+                    <div class="hero-product-note">
+                        <img src="./assets/images/deluxe-strawberry-special.jpg" alt="">
+                        <div>
+                            <span>Something sweet</span>
+                            <strong>is calling</strong>
+                        </div>
+                        <span class="note-sparkle" aria-hidden="true">✦</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="good-things" aria-label="The Scoops experience">
+            <div class="good-thing"><span class="good-icon">♡</span><span>Made for sweet moments</span></div>
+            <div class="good-thing"><span class="good-icon">✳</span><span>Flavours for every craving</span></div>
+            <div class="good-thing"><span class="good-icon">☼</span><span>A little joy in every scoop</span></div>
+        </section>
+
+        <section class="featured-section section-wrap" id="specials">
+            <div class="section-heading">
+                <div>
+                    <p class="section-kicker">THE SCOOPS EDIT</p>
+                    <h2>Today's specials</h2>
+                    <p class="section-description">A few delicious reasons to take a break.</p>
+                </div>
+                <a class="text-link" href="pages/products.html">View full menu <span aria-hidden="true">↗</span></a>
+            </div>
+
+            <div class="product-grid">
+                <article class="product-card">
+                    <a class="product-image product-image-berry" href="pages/products.html" aria-label="Explore Vanilla Berry">
+                        <span class="product-tag">Featured</span>
+                        <img src="./assets/images/berry-special.jpg" alt="Vanilla Berry ice cream">
+                    </a>
+                    <div class="product-info">
+                        <div><h3>Vanilla Berry</h3><p>₹89/-</p></div>
+                        <a class="product-arrow" href="pages/products.html" aria-label="Explore Vanilla Berry">↗</a>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <a class="product-image product-image-strawberry" href="pages/products.html" aria-label="Explore Deluxe Strawberry">
+                        <span class="product-tag">A sweet pick</span>
+                        <img src="./assets/images/deluxe-strawberry-special.jpg" alt="Deluxe Strawberry ice cream">
+                    </a>
+                    <div class="product-info">
+                        <div><h3>Deluxe Strawberry</h3><p>₹119/-</p></div>
+                        <a class="product-arrow" href="pages/products.html" aria-label="Explore Deluxe Strawberry">↗</a>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <a class="product-image product-image-chocolate" href="pages/products.html" aria-label="Explore Chocolate Love">
+                        <span class="product-tag">Chocolate fix</span>
+                        <img src="./assets/images/chocolate-love-special.jpg" alt="Chocolate Love ice cream">
+                    </a>
+                    <div class="product-info">
+                        <div><h3>Chocolate Love</h3><p>₹125/-</p></div>
+                        <a class="product-arrow" href="pages/products.html" aria-label="Explore Chocolate Love">↗</a>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <a class="product-image product-image-royal" href="pages/products.html" aria-label="Explore Royal Mix">
+                        <span class="product-tag">Try something new</span>
+                        <img src="./assets/images/royal-mix-special.jpg" alt="Royal Mix ice cream">
+                    </a>
+                    <div class="product-info">
+                        <div><h3>Royal Mix</h3><p>₹149/-</p></div>
+                        <a class="product-arrow" href="pages/products.html" aria-label="Explore Royal Mix">↗</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="flavours-section" id="flavours">
+            <div class="section-wrap">
+                <div class="section-heading flavour-heading">
+                    <div>
+                        <p class="section-kicker">A FLAVOUR FOR EVERY FEELING</p>
+                        <h2>Find your happy flavour</h2>
+                        <p class="section-description">What are you in the mood for today?</p>
+                    </div>
+                    <a class="text-link" href="pages/products.html">Explore all flavours <span aria-hidden="true">↗</span></a>
+                </div>
+
+                <div class="flavour-grid">
+                    <a class="flavour-tile" href="pages/products.html">
+                        <img src="./assets/images/strawberries.jpg" alt="Strawberry flavour">
+                        <span>Strawberry</span>
+                    </a>
+                    <a class="flavour-tile" href="pages/products.html">
+                        <img src="./assets/images/vanilla.jpg" alt="Vanilla flavour">
+                        <span>Vanilla</span>
+                    </a>
+                    <a class="flavour-tile" href="pages/products.html">
+                        <img src="./assets/images/chocolate.jpg" alt="Chocolate flavour">
+                        <span>Chocolate</span>
+                    </a>
+                    <a class="flavour-tile" href="pages/products.html">
+                        <img src="./assets/images/butterscotch.jpg" alt="Butterscotch flavour">
+                        <span>Butterscotch</span>
+                    </a>
+                    <a class="flavour-tile" href="pages/products.html">
+                        <img src="./assets/images/mango.jpg" alt="Mango flavour">
+                        <span>Mango</span>
+                    </a>
+                    <a class="flavour-tile" href="pages/products.html">
+                        <img src="./assets/images/pista.jpeg" alt="Pista flavour">
+                        <span>Pista</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="menu-banner">
+            <div class="menu-banner-content">
+                <p class="section-kicker">YOUR NEXT SCOOP IS WAITING</p>
+                <h2>Make today a little sweeter.</h2>
+                <a class="button button-light" href="pages/products.html">Explore all treats <span aria-hidden="true">↗</span></a>
+            </div>
+            <span class="banner-spark banner-spark-one" aria-hidden="true">✳</span>
+            <span class="banner-spark banner-spark-two" aria-hidden="true">✦</span>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-main">
+            <div class="footer-brand-block">
+                <img src="./assets/icons/logo-white.svg" alt="Scoops">
+                <p>A little scoop of happiness goes a long way.</p>
+            </div>
+            <div class="footer-column">
+                <h2>Explore</h2>
+                <a href="index.html">Home</a>
+                <a href="pages/products.html">Products</a>
+                <a href="#flavours">Flavours</a>
+            </div>
+            <div class="footer-column">
+                <h2>Say hello</h2>
+                <a href="mailto:enquire@scoops.com">enquire@scoops.com</a>
+                <a href="tel:+919851122467">+91 9851122467</a>
+                <span>@scoops.delicious</span>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© 2026 Scoops. All rights reserved.</span>
+            <span>Made for sweet moments.</span>
+        </div>
+    </footer>
 </body>
 </html>
